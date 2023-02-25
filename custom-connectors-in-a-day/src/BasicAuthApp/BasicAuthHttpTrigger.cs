@@ -37,7 +37,7 @@ namespace BasicAuthApp
 
         [FunctionName(nameof(BasicAuthHttpTrigger.GetProfile))]
 
-        // ⬇️⬇️⬇️ 아래의 코드 주석을 풀어주세요 ⬇️⬇️⬇️
+        // ⬇️⬇️⬇️ 아래의 코드 주석을 풀어주세요 ⬇️⬇️⬇️ // 
         [OpenApiOperation(operationId: "Profile", tags: new[] { "profile" })]
         [OpenApiSecurity("basic_auth", SecuritySchemeType.Http, Scheme = OpenApiSecuritySchemeType.Basic)]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(AtlassianUser), Description = "The OK response")]
